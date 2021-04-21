@@ -10,6 +10,9 @@
    <!-- Add font -->
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+   <!-- slider -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
    <title>Document</title>
 </head>
 
@@ -62,13 +65,49 @@
       </div>
    </header>
 
+   <div class="slider">
+      <!-- Slider main container -->
+      <div class="swiper-container">
+         <!-- Additional required wrapper -->
+         <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" id="oddSlide">
+               <div class="container">
+                  <div class="slider__content">
+                     <img src="./images/slider/slide1vertical.png" alt="Phone" class="slider__img1">
+                     <img src="./images/slider/slide1horizontal.png" alt="Phone" class="slider__img2">
+                  </div>
+               </div>
+
+
+
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide" id="evenSlide">
+               <div class="container">
+                  <div class="slider__content">
+                     <img src="./images/slider/slide2.png" alt="Phone" class="slider__img3">
+                  </div>
+               </div>
+
+
+
+            </div>
+         </div>
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+
+      </div>
+   </div>
+
    <div class="service">
       <div class="container">
          <h2 class="title service__title">
             Our Services
          </h2>
          <p class="service__text text">
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
+            nisi
             erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
             mauris condimentum nibh.
          </p>
@@ -81,7 +120,8 @@
                         Custom Design
                      </div>
                      <div class="service__descr_text">
-                        Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut,
+                        Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus
+                        ut,
                         ultrices velit.
                      </div>
                   </div>
@@ -96,7 +136,8 @@
                         Inovative Ideas
                      </div>
                      <div class="service__descr_text">
-                        Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id
+                        Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus
+                        dolor id
                         lorem.
                      </div>
                   </div>
@@ -111,7 +152,8 @@
                         Love Is The Answer
                      </div>
                      <div class="service__descr_text">
-                        Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque
+                        Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+                        Quisque
                         condimentum.
                      </div>
                   </div>
@@ -126,7 +168,8 @@
                         Responsive Layout
                      </div>
                      <div class="service__descr_text">
-                        Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit
+                        Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent
+                        elit
                         leo.
                      </div>
                   </div>
@@ -156,7 +199,8 @@
                         Feel Like A Star
                      </div>
                      <div class="service__descr_text">
-                        Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+                        Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam
+                        tellus.
                      </div>
                   </div>
                </div>
@@ -166,7 +210,8 @@
       </div>
    </div>
 
-
+   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="./js/top.js"></script>
 </body>

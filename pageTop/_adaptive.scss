@@ -1,8 +1,0 @@
-@mixin breakpoint($point) {
-   @if $point == hf {
-      @media(max-width:670px) {
-         @content;
-      }
-   }
-  
-}

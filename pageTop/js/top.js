@@ -1,15 +1,18 @@
-// Открытие и закрытие блока
-$(document).ready(function () {
-   $('.header__burger').click(function (event) {
-      $('.header__burger, .header__menu').toggleClass('active');
-      $('body').toggleClass('lock');
-   });
-});
+const swiper = new Swiper('.swiper-container', {
+   autoplay: true,
+   autoplayTimeout: 3400,
+   speed: 500,
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+   },
+   loop: true,
 
-// пропажа бургер меню при клике на элемент
-$(document).ready(function () {
-   $('.header__link').click(function (event) {
-      $('.header__burger, .header__menu').toggleClass('active');
-      $('body').toggleClass('lock');
-   });
+
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+
+
 });
